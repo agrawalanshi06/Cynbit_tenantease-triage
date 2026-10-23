@@ -1,0 +1,224 @@
+{
+  "n_messages": 166,
+  "approaches": {
+    "tfidf_lr": {
+      "category": {
+        "accuracy": 0.681,
+        "macro_f1": 0.681,
+        "per_class": {
+          "plumbing": {
+            "precision": 0.708,
+            "recall": 0.81,
+            "f1-score": 0.756,
+            "support": 42
+          },
+          "electrical": {
+            "precision": 0.667,
+            "recall": 0.514,
+            "f1-score": 0.581,
+            "support": 35
+          },
+          "payment_query": {
+            "precision": 0.833,
+            "recall": 0.862,
+            "f1-score": 0.847,
+            "support": 29
+          },
+          "noise_complaint": {
+            "precision": 0.737,
+            "recall": 0.609,
+            "f1-score": 0.667,
+            "support": 23
+          },
+          "general": {
+            "precision": 0.524,
+            "recall": 0.595,
+            "f1-score": 0.557,
+            "support": 37
+          }
+        }
+      },
+      "urgency": {
+        "accuracy": 0.452,
+        "macro_f1": 0.435,
+        "per_class": {
+          "emergency": {
+            "precision": 0.529,
+            "recall": 0.375,
+            "f1-score": 0.439,
+            "support": 24
+          },
+          "high": {
+            "precision": 0.391,
+            "recall": 0.281,
+            "f1-score": 0.327,
+            "support": 32
+          },
+          "normal": {
+            "precision": 0.411,
+            "recall": 0.5,
+            "f1-score": 0.451,
+            "support": 60
+          },
+          "low": {
+            "precision": 0.509,
+            "recall": 0.54,
+            "f1-score": 0.524,
+            "support": 50
+          }
+        },
+        "emergency_recall": 0.375,
+        "emergency_missed_as_low_or_normal": 10,
+        "under_triage_rate_(emergency+high)": 0.625
+      }
+    },
+    "tfidf_lr+safety_net": {
+      "category": {
+        "accuracy": 0.681,
+        "macro_f1": 0.681,
+        "per_class": {
+          "plumbing": {
+            "precision": 0.708,
+            "recall": 0.81,
+            "f1-score": 0.756,
+            "support": 42
+          },
+          "electrical": {
+            "precision": 0.667,
+            "recall": 0.514,
+            "f1-score": 0.581,
+            "support": 35
+          },
+          "payment_query": {
+            "precision": 0.833,
+            "recall": 0.862,
+            "f1-score": 0.847,
+            "support": 29
+          },
+          "noise_complaint": {
+            "precision": 0.737,
+            "recall": 0.609,
+            "f1-score": 0.667,
+            "support": 23
+          },
+          "general": {
+            "precision": 0.524,
+            "recall": 0.595,
+            "f1-score": 0.557,
+            "support": 37
+          }
+        }
+      },
+      "urgency": {
+        "accuracy": 0.53,
+        "macro_f1": 0.542,
+        "per_class": {
+          "emergency": {
+            "precision": 0.71,
+            "recall": 0.917,
+            "f1-score": 0.8,
+            "support": 24
+          },
+          "high": {
+            "precision": 0.5,
+            "recall": 0.281,
+            "f1-score": 0.36,
+            "support": 32
+          },
+          "normal": {
+            "precision": 0.462,
+            "recall": 0.5,
+            "f1-score": 0.48,
+            "support": 60
+          },
+          "low": {
+            "precision": 0.519,
+            "recall": 0.54,
+            "f1-score": 0.529,
+            "support": 50
+          }
+        },
+        "emergency_recall": 0.917,
+        "emergency_missed_as_low_or_normal": 2,
+        "under_triage_rate_(emergency+high)": 0.375
+      }
+    },
+    "rules_only": {
+      "category": {
+        "accuracy": 0.88,
+        "macro_f1": 0.875,
+        "per_class": {
+          "plumbing": {
+            "precision": 0.854,
+            "recall": 0.976,
+            "f1-score": 0.911,
+            "support": 42
+          },
+          "electrical": {
+            "precision": 0.882,
+            "recall": 0.857,
+            "f1-score": 0.87,
+            "support": 35
+          },
+          "payment_query": {
+            "precision": 0.929,
+            "recall": 0.897,
+            "f1-score": 0.912,
+            "support": 29
+          },
+          "noise_complaint": {
+            "precision": 0.944,
+            "recall": 0.739,
+            "f1-score": 0.829,
+            "support": 23
+          },
+          "general": {
+            "precision": 0.842,
+            "recall": 0.865,
+            "f1-score": 0.853,
+            "support": 37
+          }
+        }
+      },
+      "urgency": {
+        "accuracy": 0.657,
+        "macro_f1": 0.671,
+        "per_class": {
+          "emergency": {
+            "precision": 0.913,
+            "recall": 0.875,
+            "f1-score": 0.894,
+            "support": 24
+          },
+          "high": {
+            "precision": 0.947,
+            "recall": 0.562,
+            "f1-score": 0.706,
+            "support": 32
+          },
+          "normal": {
+            "precision": 0.528,
+            "recall": 0.933,
+            "f1-score": 0.675,
+            "support": 60
+          },
+          "low": {
+            "precision": 0.778,
+            "recall": 0.28,
+            "f1-score": 0.412,
+            "support": 50
+          }
+        },
+        "emergency_recall": 0.875,
+        "emergency_missed_as_low_or_normal": 3,
+        "under_triage_rate_(emergency+high)": 0.268
+      }
+    }
+  },
+  "extraction": {
+    "regex": {
+      "unit_exact_match": 0.855,
+      "time_match": 0.843
+    }
+  }
+}
